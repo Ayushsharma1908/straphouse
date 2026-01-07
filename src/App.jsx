@@ -1,9 +1,7 @@
+import LandingPage from "./pages/LandingPage";
+
 function App() {
-  return (
-    <div className="bg-blue-500 text-white p-10 text-center font-bold">
-      Tailwind is working!
-    </div>
-  );
+  return <LandingPage />;
 }
 
 export default App;
