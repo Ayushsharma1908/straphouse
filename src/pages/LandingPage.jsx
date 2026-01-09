@@ -26,7 +26,7 @@ export default function LandingPage() {
                 Contact
               </a>
             </li>
-            <li className="border px-4 py-1.5 rounded-full hover:bg-gray-900 hover:text-white transition">
+            <li>
               <a
                 href="/signin"
                 className="border px-4 py-1.5 rounded-full hover:bg-gray-900 hover:text-white transition"
