@@ -1,41 +1,45 @@
+import { Link } from "react-router-dom";
+
 export default function SignIn() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-violet-50 px-4">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-xl border border-gray-200 p-8">
+    <div className="min-h-screen flex items-center justify-center bg-[#fafafa] px-6">
 
-        {/* Header */}
-        <h2 className="text-3xl font-semibold text-gray-900 text-center">
-          Welcome Back
-        </h2>
-        <p className="text-gray-500 text-center mt-2">
-          Sign in to continue to StrapHouse
+      <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-10">
+
+        {/* Logo */}
+        <h1 className="text-2xl font-semibold text-center mb-2">
+          Strap<span className="text-violet-600">House</span>
+        </h1>
+
+        <p className="font-[Allura] text-3xl text-violet-600 text-center mb-8">
+          Welcome back
         </p>
 
         {/* Form */}
-        <form className="mt-8 space-y-5">
+        <form className="space-y-5">
           <div>
-            <label className="block text-sm font-medium text-gray-600">
+            <label className="block text-sm text-gray-600 mb-1">
               Email
             </label>
             <input
               type="email"
               placeholder="you@example.com"
-              className="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-600">
+            <label className="block text-sm text-gray-600 mb-1">
               Password
             </label>
             <input
               type="password"
               placeholder="••••••••"
-              className="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none"
             />
           </div>
 
-          <button className="w-full py-3 rounded-xl bg-violet-600 text-white font-medium hover:bg-violet-700 transition shadow-md">
+          <button className="w-full mt-4 bg-gray-900 text-white py-3 rounded-full hover:scale-105 transition">
             Sign In
           </button>
         </form>
@@ -43,10 +47,14 @@ export default function SignIn() {
         {/* Footer */}
         <p className="text-center text-gray-500 text-sm mt-6">
           Don’t have an account?{" "}
-          <span className="text-violet-600 font-medium cursor-pointer hover:underline">
+          <Link
+            to="/signup"
+            className="text-violet-600 font-medium hover:underline"
+          >
             Sign Up
-          </span>
+          </Link>
         </p>
+
       </div>
     </div>
   );
