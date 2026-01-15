@@ -245,7 +245,7 @@ const Header = () => {
                   </a>
                 </motion.li>
               ))}
-
+{/* added Cta button */}
               {/* CTA Button */}
               <motion.li
                 className="ml-4"
@@ -254,7 +254,7 @@ const Header = () => {
                 animate="visible"
                 whileHover="hover"
                 whileTap="tap"
-              >
+              > 
                 <a
                   href="#how-to"
                   className="px-6 py-2.5 bg-strap-black text-white font-semibold rounded-full hover:bg-strap-violet transition-all flex items-center gap-2 group"
