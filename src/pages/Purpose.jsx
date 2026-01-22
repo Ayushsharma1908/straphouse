@@ -7,7 +7,6 @@ const Purpose = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
-            <Sparkles className="text-strap-violet" />
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-strap-black">
               Why StrapHouse Exists
             </h2>

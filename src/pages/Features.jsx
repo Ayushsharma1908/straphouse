@@ -219,11 +219,9 @@ const Features = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Sparkles className="w-6 h-6 text-strap-violet" />
             <span className="text-sm font-semibold text-strap-violet bg-strap-violet/10 px-4 py-1 rounded-full">
               PREMIUM FEATURES
             </span>
-            <Sparkles className="w-6 h-6 text-strap-violet" />
           </motion.div>
 
           <motion.h2 
